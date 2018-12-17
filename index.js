@@ -1,7 +1,5 @@
 // global datastore
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
-let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
-
 let neighborhoodID = 1
 let customerID = 1
 let mealID = 1
