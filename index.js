@@ -1,10 +1,10 @@
 // global datastore
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
-let neighborhoodID = 1
-let customerID = 1
-let mealID = 1
-let deliveryID = 1
+let neighborhoodID = 0
+let customerID = 0
+let mealID = 0
+let deliveryID = 0
 
 function findSingle(classInstance, category) {
   let categoryId = category.toString() + "Id"
@@ -20,8 +20,6 @@ function findSingle(classInstance, category) {
 const distinct = (value, index, self) =>{
   return self.indexOf(value) === index
 }
-// return store.customers.filter(customer =>{
-//   return customer.neighborhoodId == this.id
 
 function findMany(classInstance, classType, category) {
   let instanceCategoryID = category.toString().toLowerCase() + "Id"
